@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#grid-container {
+    border: solid 1px black;
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr)
+}
+
+.grid-cell {
+    border: solid 1px black;
+    font-size: 4rem;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* pop up form */
+
+#form-container {
+    background-color: white;
+    border: 2px solid black;
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    display: grid; /*  toggle on / off with JS */
+    justify-items: center;
+    align-items: center;
+}
+
+#form-content {
+    display: grid;
+    justify-items: center;
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#note {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 20px;
+}
+
+#form {
+    display: grid;
+    justify-items: center;
+}
+
+#form input {
+    border: 2px solid black;
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#form input:focus {
+    background-color: rgb(235, 235, 235);
+}
+
+#form button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 1rem;
+    height: 60px;
+    width: 200px;
+    margin: 40px;
+}
+
+#form button:hover {
+    background-color: black;
+    color: white;
+}
+
+#form button:active {
+    background-color: red;
+    color: black;
+}

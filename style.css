@@ -38,7 +38,7 @@ body {
     height: 500px;
     width: 700px;
     position: absolute;
-    display: grid; /*  toggle on / off with JS */
+    display: none; /*  toggle on / off with JS */
     justify-items: center;
     align-items: center;
 }

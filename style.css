@@ -11,6 +11,17 @@ body {
     align-items: center;
 }
 
+#container {
+    display: grid;
+    justify-items: center;
+}
+
+#instruction {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 #grid-container {
     border: solid 1px black;
@@ -93,6 +104,26 @@ body {
 }
 
 #form button:active {
-    background-color: red;
-    color: black;
+    background-color: green;
+}
+
+/* Play again button */
+
+#play-again {
+    background-color: none;
+    border: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+#play-again:hover {
+    text-decoration: none;
+}
+
+#play-again:active {
+    color: green;
 }
